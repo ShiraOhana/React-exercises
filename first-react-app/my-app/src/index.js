@@ -5,11 +5,12 @@ import App from "./EX2.1";
 import reportWebVitals from "./reportWebVitals";
 import Hello from "./EX2.2";
 import Boxes from "./EX3.1";
+import Quiz from "./EX3.2";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />; // <Hello /> <Boxes />
+    <App />; // <Hello /> <Boxes /> <Quiz />
   </React.StrictMode>
 );
 
