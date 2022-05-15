@@ -4,11 +4,12 @@ import "./index.css";
 import App from "./EX2.1";
 import reportWebVitals from "./reportWebVitals";
 import Hello from "./EX2.2";
+import Boxes from "./EX3.1";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />; // <Hello />
+    <App />; // <Hello /> <Boxes />
   </React.StrictMode>
 );
 
