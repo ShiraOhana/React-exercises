@@ -1,4 +1,4 @@
-import "./Hello.css";
+import "./EX2.2.css";
 
 const Hello = () => {
   const data = ["Hello", "world"];
