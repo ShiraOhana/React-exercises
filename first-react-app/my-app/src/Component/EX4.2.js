@@ -8,7 +8,6 @@ const Cards = (props) => {
         style={{
           width: "467px",
           height: "300px",
-          //   padding: "10px",
         }}
       ></img>
       <h1>{props.title}</h1>
