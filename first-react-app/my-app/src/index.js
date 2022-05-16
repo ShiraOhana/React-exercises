@@ -7,13 +7,32 @@ import Hello from "./EX2.2";
 import Boxes from "./EX3.1";
 import Quiz from "./EX3.2";
 import Button from "./Component/EX4.1";
+import Cards from "./Component/EX4.2";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <App />; // <Hello /> <Boxes /> <Quiz /> */}
-    <Button lable="Important" />
-    <Button lable="Not Important" />
+    {/* <Button lable="Important" />
+    <Button lable="Not Important" /> */}
+    <Cards
+      img="https://www.rover.com/blog/wp-content/uploads/2019/01/6342530545_45ec8696c8_b.jpg"
+      title="Lehem"
+      description="A dogo named Lehem"
+      link="http://www.lehem.com"
+    />
+    <Cards
+      img="https://www.thefarmersdog.com/digest/wp-content/uploads/2021/12/corgi-top-1400x871.jpg"
+      title="Bread"
+      description="A dogo named Bread"
+      link="http://www.bread.com"
+    />
+    <Cards
+      img="https://media-be.chewy.com/wp-content/uploads/2018/03/05113729/corgi-sploot-1024x548.jpg"
+      title="Pita"
+      description="A dogo named Pita"
+      link="http://www.pita.com"
+    />
   </React.StrictMode>
 );
 
