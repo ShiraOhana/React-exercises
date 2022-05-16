@@ -6,11 +6,14 @@ import reportWebVitals from "./reportWebVitals";
 import Hello from "./EX2.2";
 import Boxes from "./EX3.1";
 import Quiz from "./EX3.2";
+import Button from "./Component/EX4.1";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />; // <Hello /> <Boxes /> <Quiz />
+    {/* <App />; // <Hello /> <Boxes /> <Quiz /> */}
+    <Button lable="Important" />
+    <Button lable="Not Important" />
   </React.StrictMode>
 );
 
