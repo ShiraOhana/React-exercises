@@ -4,10 +4,7 @@ const Button = (props) => {
     <div>
       <button
         style={{
-          backgroundColor: "grey",
-          color: "blue",
-          cursor: "pointer",
-          fontWeight: "bold",
+          fontWeight: props.font,
         }}
       >
         {props.lable}

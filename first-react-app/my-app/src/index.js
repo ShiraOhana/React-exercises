@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <App />; // <Hello /> <Boxes /> <Quiz /> */}
-    <Button lable="Important" />
+    <Button lable="Important" font="bold" />
     <Button lable="Not Important" />
     {/* <Cards
       img="https://www.rover.com/blog/wp-content/uploads/2019/01/6342530545_45ec8696c8_b.jpg"
