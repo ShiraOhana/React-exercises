@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
-import './style.css';
+import React, { Component } from "react";
 
 export default class Ex73 extends Component {
-  state = { num: 0, labelColor: 'black' };
+  state = { num: 0, labelColor: "black" };
 
   handleClick = ({ target: { id } }) => {
     // let bool = 10;
@@ -15,16 +14,16 @@ export default class Ex73 extends Component {
     //   addNum = -1;
     // }
     this.setState((prevState) => {
-      const bool = id === 'inc' ? prevState.num < 10 : prevState.num > -10;
-      const addNum = id === 'inc' ? 1 : -1;
+      const bool = id === "inc" ? prevState.num < 10 : prevState.num > -10;
+      const addNum = id === "inc" ? 1 : -1;
       return {
         num: bool ? prevState.num + addNum : prevState.num,
         labelColor:
           prevState.num + addNum === 0
-            ? 'black'
+            ? "black"
             : prevState.num + addNum > 0
-            ? 'green'
-            : 'red',
+            ? "green"
+            : "red",
       };
     });
   };
@@ -74,10 +73,10 @@ export default class Ex73 extends Component {
         >
           {this.state.num}
         </label>
-        <button id='inc' onClick={this.handleClick}>
+        <button id="inc" onClick={this.handleClick}>
           Increment
         </button>
-        <button id='dec' onClick={this.handleClick}>
+        <button id="dec" onClick={this.handleClick}>
           Decrement
         </button>
       </div>

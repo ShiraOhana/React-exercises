@@ -10,9 +10,9 @@ import Button from "./Component/EX4.1";
 import Cards from "./Component/EX4.2";
 import Count from "./Component/EX7.1";
 import Hide from "./Component/EX7.2";
-
+import EX81 from "./Component/EX8.1";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Hide />);
+root.render(<EX81 />);
 // <React.StrictMode>
 // {/* <App />; // <Hello /> <Boxes /> <Quiz /> */}
 // <Button lable="Important" fontWeigth="bold" />
