@@ -12,8 +12,9 @@ import Count from "./Component/EX7.1";
 import Hide from "./Component/EX7.2";
 import EX81 from "./Component/EX8.1";
 import EX82 from "./Component/EX8.2";
+import EX83 from "./Component/EX8.3";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<EX82 />);
+root.render(<EX83 />);
 // <React.StrictMode>
 // {/* <App />; // <Hello /> <Boxes /> <Quiz /> */}
 // <Button lable="Important" fontWeigth="bold" />
