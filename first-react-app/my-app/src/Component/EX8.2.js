@@ -1,28 +1,27 @@
 import React, { Component } from "react";
 import "./EX82.css";
+
 export default class Ex82 extends Component {
   state = { isHidden: false };
   // First initial of the box's movment using state
-
   componentDidMount() {
     setTimeout(() => {
-      this.setState(() => {
-        return { favoriteColor: "gn" };
-      });
+      this.setState({ isHidden: true });
     }, 1000);
   }
   componentWillUnmount() {
-    // Updating the div's content after the color changed (the first change is some kind of triger)
-    // let newText = document.querySelector("#updateText");
-    // let newColor = `My favorite new color is ${this.state.favoriteColor}`;
-    // newText.textContent = newColor;
+    setTimeout(() => {
+      this.setState({ isHidden: false });
+    }, 5000);
   }
   render() {
     return (
       <div>
-        <div id="box"></div>
-        <div id="box2"></div>
-        <div id="box3"></div>
+        {this.state.isHidden && <div id="box"></div>}
+        {this.state.isHidden && <div id="box2"></div>}
+        {this.state.isHidden && <div id="box3"></div>}
+        {/* <div id="box2"></div>
+        <div id="box3"></div> */}
       </div>
     );
   }

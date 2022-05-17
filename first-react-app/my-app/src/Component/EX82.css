@@ -7,11 +7,11 @@
   top: 40px;
   left: 0px;
   animation-name: move;
-  animation-duration: 3s;
+  animation-duration: 4s;
 }
 #box2 {
-  width: 150px;
-  height: 100px;
+  width: 100px;
+  height: 150px;
   background-color: rgba(119, 43, 43, 0.4);
   margin: 10px;
   position: absolute;
@@ -20,7 +20,7 @@
   animation-duration: 3s;
 }
 #box3 {
-  width: 200px;
+  width: 100px;
   height: 80px;
   background-color: rgba(146, 76, 76, 0.8);
   margin: 10px;
@@ -31,9 +31,9 @@
 }
 @keyframes move {
   from {
-    transform: translateX(0);
+    transform: translateX(-100px);
   }
   to {
-    transform: translateY(700px);
+    transform: translateY(0px);
   }
 }
