@@ -11,8 +11,9 @@ import Cards from "./Component/EX4.2";
 import Count from "./Component/EX7.1";
 import Hide from "./Component/EX7.2";
 import EX81 from "./Component/EX8.1";
+import EX82 from "./Component/EX8.2";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<EX81 />);
+root.render(<EX82 />);
 // <React.StrictMode>
 // {/* <App />; // <Hello /> <Boxes /> <Quiz /> */}
 // <Button lable="Important" fontWeigth="bold" />
