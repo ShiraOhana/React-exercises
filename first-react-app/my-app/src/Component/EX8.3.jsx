@@ -7,7 +7,7 @@ export default class Ex83 extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ changeColor: "yellow", count: this.state.count + 1 });
-    }, 500);
+    }, 5000);
   }
 
   componentDidUpdate() {
@@ -19,7 +19,7 @@ export default class Ex83 extends Component {
       if (this.state.count === 5) {
         this.setState({ borderRadius: "50%" });
       }
-    }, 500);
+    }, 50000000);
   }
 
   setBg() {
