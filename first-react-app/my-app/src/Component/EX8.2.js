@@ -7,12 +7,12 @@ export default class Ex82 extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ isHidden: true });
-    }, 1000);
+    }, 500);
   }
   componentWillUnmount() {
     setTimeout(() => {
       this.setState({ isHidden: false });
-    }, 5000);
+    }, 500);
   }
   render() {
     return (

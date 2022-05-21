@@ -7,7 +7,7 @@ export default class Ex83 extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ changeColor: "yellow", count: this.state.count + 1 });
-    }, 5000);
+    }, 500);
   }
 
   componentDidUpdate() {
