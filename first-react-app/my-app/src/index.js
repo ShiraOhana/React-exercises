@@ -14,10 +14,11 @@ import EX81 from "./Component/EX8.1";
 import EX82 from "./Component/EX8.2";
 import EX83 from "./Component/EX8.3";
 import EX111 from "./Component/EX11.1";
-import Ex121 from "./Component/EX12.1";
+// import Ex121 from "./Component/EX12.1";
+import EX13 from "./EX13";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Ex121 />);
+root.render(<EX13 />);
 
 // <React.StrictMode>
 {
