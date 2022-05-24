@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 
 export default class EX13 extends Component {
-  state = { users: [], last: "Ohana", img: "" };
+  state = { users: [], last: "Ohana", img: "", searchByName: "" };
 
   async componentDidMount() {
     let res = [];
@@ -10,8 +10,6 @@ export default class EX13 extends Component {
       res.push(await axios.get("https://randomuser.me/api/"));
     }
 
-    // let specificData = res.data.results[0];
-    // map((item) => item);
     let users = res.map(({ data: { results } }) => ({
       first: results[0].name.first,
       last: results[0].name.last,
@@ -19,15 +17,27 @@ export default class EX13 extends Component {
     }));
     this.setState({ users });
   }
+  onSearchSubmit(event) {
+    let find = event.target.value;
+    // console.log(find);
+    this.setState({
+      users: this.state.users.filter((user) => user.first.includes(find)),
+    });
+  }
 
   render() {
     return (
       <div>
-        <input></input> <br />
+        <input
+          type="text"
+          //   value={this.state.searchByName}
+          onChange={(event) => this.onSearchSubmit(event)}
+        ></input>{" "}
+        <br />
         {this.state.users.map((user) => {
           return (
             <>
-              {user.first} {user.last} <br />
+              <br /> {user.first} {user.last} <br /> <br />
               <img src={user.img}></img>
             </>
           );
