@@ -16,11 +16,19 @@ import EX83 from "./Component/EX8.3";
 import EX111 from "./Component/EX11.1";
 // import Ex121 from "./Component/EX12.1";
 import EX13 from "./EX13";
+import Todo from "./Component/Todo";
+import EX1811 from "./Component/EX1811";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<EX13 />);
+root.render(<EX1811 />);
 
 // <React.StrictMode>
+{
+  /* <EX13 /> */
+}
+{
+  /* <Todo /> */
+}
 {
   /* <EX83 /> */
 }
